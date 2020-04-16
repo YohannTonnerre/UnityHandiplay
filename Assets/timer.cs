@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement ;
+using UnityEngine.SceneManagement;
  
 public class Timer : MonoBehaviour
 {
-    public float start = 600;
+    public float start = 10;
  
     private Text time;
  
