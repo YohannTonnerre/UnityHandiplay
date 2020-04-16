@@ -9,6 +9,8 @@ public class PlayerBehavior : MonoBehaviour
     public float m_speed = 100f;
     public Rigidbody2D m_rb2D;
     public int m_score = 0;
+    public int bonus_r = 0;
+    public bool bonus_cle = false;
     public GameObject m_ball;
     public Sprite LEFT;
     public Sprite RIGHT;
@@ -57,11 +59,19 @@ public class PlayerBehavior : MonoBehaviour
             Destroy(collision.gameObject);
             m_score = m_score + 1;
         }
-        
+
         if (collision.gameObject.tag == "routeur")
         {
             Destroy(collision.gameObject);
             m_score = m_score + 5;
+            bonus_r = bonus_r + 1;
+        }
+
+        if (collision.gameObject.tag == "clé")
+        {
+            Destroy(collision.gameObject);
+            m_score = m_score + 10;
+            bonus_cle = true ;
         }
 
     }

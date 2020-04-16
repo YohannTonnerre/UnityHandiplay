@@ -8,6 +8,7 @@ TagManager:
   - Obstacle
   - BoxWood
   - routeur
+  - "cl\xE9"
   layers:
   - Default
   - TransparentFX
