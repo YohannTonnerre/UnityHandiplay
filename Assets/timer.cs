@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement ;
  
-public class timer : MonoBehaviour
+public class Timer : MonoBehaviour
 {
     public float start = 600;
  
