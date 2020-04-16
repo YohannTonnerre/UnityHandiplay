@@ -57,6 +57,12 @@ public class PlayerBehavior : MonoBehaviour
             Destroy(collision.gameObject);
             m_score = m_score + 1;
         }
+        
+        if (collision.gameObject.tag == "routeur")
+        {
+            Destroy(collision.gameObject);
+            m_score = m_score + 5;
+        }
 
     }
 
