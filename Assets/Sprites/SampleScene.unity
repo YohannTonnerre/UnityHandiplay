@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 285306114}
   - component: {fileID: 285306113}
   m_Layer: 0
-  m_Name: Cable
+  m_Name: cable
   m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 465653311}
   - component: {fileID: 465653313}
   m_Layer: 0
-  m_Name: "cl\xE9"
+  m_Name: cle
   m_TagString: "cl\xE9"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -626,7 +626,7 @@ GameObject:
   - component: {fileID: 561099296}
   - component: {fileID: 561099297}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Jac
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -835,7 +835,7 @@ GameObject:
   - component: {fileID: 1119274209}
   - component: {fileID: 1119274208}
   m_Layer: 0
-  m_Name: enemy
+  m_Name: virus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1111,7 +1111,7 @@ GameObject:
   - component: {fileID: 2032841207}
   - component: {fileID: 2032841206}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: frameText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
