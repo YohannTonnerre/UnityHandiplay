@@ -2,23 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement ;
-
-
-public class OnclickPause : MonoBehaviour
+public class Isposed : MonoBehaviour
 {
 
 	public bool isPauseded = false;
-    void Update () {
-		if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.Escape)) {
-			isPauseded = !isPauseded;
-			if(isPauseded)
-			    Time.timeScale = 0f;
-			else
-			    Time.timeScale = 1f;
-		}
-	}
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
 
-	 void OnGUI () 
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKeyDown("escape"))
+        {
+            Pause();
+        }
+    }
+
+    public void Pause(){
+    	isPauseded = !isPauseded;
+    	if(isPauseded)
+    	    Time.timeScale = 0f;
+    	else
+    	    Time.timeScale = 1f;
+    }
+
+    void OnGUI () 
     {
         if(isPauseded)
         {
