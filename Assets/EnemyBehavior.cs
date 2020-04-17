@@ -7,21 +7,27 @@ public class EnemyBehavior : MonoBehaviour
 
 
 
-    public float speed = 100;
-    private Transform target;
-    public Rigidbody2D m_rb2Denemy;
-    // Start is called before the first frame update
-    void Start()
-    {
-        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-        
-    }
+    public Transform[] waypoints;
+    int cur = 0;
+    public float speed = 5;
+
+
 
     // Update is called once per frame
-    void Update()
-    { 
-        transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-        print(target);
+    void FixedUpdate()
+    {
+        // Waypoint not reached yet? then move closer
+        if (transform.position != waypoints[cur].position)
+        {
+            Vector2 p = Vector2.MoveTowards(transform.position,
+                                            waypoints[cur].position,
+                                            speed);
+            GetComponent<Rigidbody2D>().MovePosition(p);
+        }
+
+        // Waypoint reached, select next one
+        
+        else cur = (cur + 1) % waypoints.Length;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
