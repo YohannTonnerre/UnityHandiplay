@@ -29,22 +29,22 @@ public class PlayerBehavior : MonoBehaviour
         if (Input.GetAxis("Horizontal") < 0f)
         {
             m_rb2D.MovePosition(m_rb2D.position + Time.fixedDeltaTime * m_speed * Vector2.left);
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = LEFT;
+            /*this.gameObject.GetComponent<SpriteRenderer>().sprite = LEFT;*/
         }
         if (Input.GetAxis("Horizontal") > 0f)
         {
             m_rb2D.MovePosition(m_rb2D.position + Time.fixedDeltaTime * m_speed * Vector2.right);
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = RIGHT;
+            /*this.gameObject.GetComponent<SpriteRenderer>().sprite = RIGHT;*/
         }
         if (Input.GetAxis("Vertical") < 0f)
         {
             m_rb2D.MovePosition(m_rb2D.position + Time.fixedDeltaTime * m_speed * Vector2.down);
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = FRONT;
+            /*this.gameObject.GetComponent<SpriteRenderer>().sprite = FRONT;*/
         }
         if (Input.GetAxis("Vertical") > 0f)
         {
             m_rb2D.MovePosition(m_rb2D.position + Time.fixedDeltaTime * m_speed * Vector2.up);
-            this.gameObject.GetComponent<SpriteRenderer>().sprite = BACK;
+            /*this.gameObject.GetComponent<SpriteRenderer>().sprite = BACK;*/
         }
         if (Input.GetAxis("Fire1") > 0f)
         {
