@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement ;
 public class OnclickPause : MonoBehaviour
 {
 
-	private bool isPaused = false;
+	public bool isPaused = false;
     void Update () {
 		if (Input.GetMouseButtonDown(0)) {
 			isPaused = !isPaused;
@@ -37,6 +37,7 @@ public class OnclickPause : MonoBehaviour
             }
         }
         else{
+
 			Time.timeScale = 1f;
         }
     }

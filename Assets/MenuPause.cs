@@ -5,29 +5,22 @@ using UnityEngine.SceneManagement ;
 
 public class MenuPause : MonoBehaviour
 {
-    private bool isPaused = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    public bool isPaused = false;
+    void Update () {
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            isPaused = !isPaused;
+            if(isPaused)
+                Time.timeScale = 0f;
+            else
+                Time.timeScale = 1f;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        isPaused = !isPaused;
-
-        if(isPaused)
-            Time.timeScale = 0f;
-        else
-            Time.timeScale = 1f;
-    }
-
-    void OnGUI () 
+     void OnGUI () 
     {
         if(isPaused)
         {
+
             Time.timeScale = 0f;
             // Si on clique sur le bouton alors isPaused devient faux donc le jeu reprend
             if(GUI.Button(new Rect(Screen.width / 2 - 40, Screen.height / 2 - 20, 80, 40), "Continuer"))
@@ -42,6 +35,7 @@ public class MenuPause : MonoBehaviour
             }
         }
         else{
+
             Time.timeScale = 1f;
         }
     }
