@@ -28,6 +28,7 @@ public class MenuPause : MonoBehaviour
     {
         if(isPaused)
         {
+            Time.timeScale = 0f;
             // Si on clique sur le bouton alors isPaused devient faux donc le jeu reprend
             if(GUI.Button(new Rect(Screen.width / 2 - 40, Screen.height / 2 - 20, 80, 40), "Continuer"))
             {
@@ -39,6 +40,9 @@ public class MenuPause : MonoBehaviour
             {
                 SceneManager.LoadScene("0_Menu"); // Charge le menu principal
             }
+        }
+        else{
+            Time.timeScale = 1f;
         }
     }
 }
