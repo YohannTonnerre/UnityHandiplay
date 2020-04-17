@@ -520,7 +520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50a7a3fe2ec01384ea8dce58edce074f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  start: 60
 --- !u!222 &456932811
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -618,7 +617,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 465653310}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -746,6 +745,7 @@ GameObject:
   - component: {fileID: 561099293}
   - component: {fileID: 561099296}
   - component: {fileID: 561099297}
+  - component: {fileID: 561099298}
   m_Layer: 0
   m_Name: Jac
   m_TagString: Player
@@ -919,6 +919,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 594040157}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -942,6 +943,14 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_GameObject: {fileID: 561099292}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d3d595f364d6642893134c87c80930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+>>>>>>> c4e268edebc43aa082a9ed7650bb8fe28ed42164
 --- !u!1 &1065978043
 GameObject:
   m_ObjectHideFlags: 0
@@ -1141,7 +1150,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &1165162616
 GameObject:
   m_ObjectHideFlags: 0
