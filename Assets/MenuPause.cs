@@ -37,7 +37,7 @@ public class MenuPause : MonoBehaviour
             // Dans le cas du bouton Quitter, il faut augmenter sa position Y pour qu'il soit plus bas.
             if(GUI.Button(new Rect(Screen.width / 2 - 40, Screen.height / 2 + 40, 80, 40), "Quitter"))
             {
-                SceneManager.LoadScene("Menu"); // Charge le menu principal
+                SceneManager.LoadScene("0_Menu"); // Charge le menu principal
             }
         }
     }

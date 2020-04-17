@@ -14,4 +14,9 @@ public class MainMenu : MonoBehaviour
     {
         Application.Quit(); // Ferme le jeu
     }
+
+     public void InputsGame ()
+    {
+        SceneManager.LoadScene("_GestionInput");
+    }
 }

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Sprites/2_Boss.unity
     guid: ccfc20d5e47328d45b199595695c7b81
+  - enabled: 1
+    path: Assets/Sprites/_GestionInput.unity
+    guid: 7a1c6bc18c3cdab49b02623e370dcb20
   m_configObjects: {}
