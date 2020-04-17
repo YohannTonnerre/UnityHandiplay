@@ -24,7 +24,7 @@ public class Timer : MonoBehaviour
 
         if (start <= 1)
         {
-            SceneManager.LoadScene("level2boss");
+            SceneManager.LoadScene("2_Boss");
         }
     }
 }
